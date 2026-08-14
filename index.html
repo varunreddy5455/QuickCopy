@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QuickCopy</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+
+      <header>
+        <img src="templates-app-logo.png" alt="Templates App Logo" class="logo" />
+        <h1>QuickCopy</h1>
+      </header>
+
+      <section class="about">
+        <h2>One place for all your templates</h2>
+        <p>This application allows you to create and manage templates for various purposes. You can customize templates, save them, and use them across various platforms without having to create multiple templates on different platforms.</p>
+      </section>
+
+      <section class="features">
+        <h2>Features</h2>
+        <ul class="feature-list">
+          <li>Create and customize templates</li>
+          <li>Save templates for future use</li>
+          <li>Use templates across different platforms</li>
+          <li>Collaborate with team members on template creation</li>
+        </ul>
+      </section>
+
+      <section class="card add-template">
+        <h2>Add Template</h2>
+        <p>To add a new template, please fill out the form below:</p>
+        <div class="form-row">
+          <input id="template-name" type="text" placeholder="Template Name"/>
+        </div>
+        <div class="form-row">
+          <textarea id="template-body" placeholder="Template Body" rows="5" cols="50"></textarea>
+        </div>
+        <div class="form-row">
+          <button id="save-template">Save Template</button>
+        </div>
+      </section>
+
+      <section class="card my-templates">
+        <h2>My Templates</h2>
+        <div id="templates-list" class="templates-grid"></div>
+      </section>
+
+    </div>
+  </body>
+</html>

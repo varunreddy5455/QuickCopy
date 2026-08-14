@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7e7e1;
+    font-family: "Google Sans", Roboto, -apple-system, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    width: 70px;
+}
+
+h1 {
+    color: rgb(80, 80, 80);
+    font-size: 30px;
+    margin: 0;
+}
+
+h2 {
+    color: rgb(80, 80, 80);
+    text-align: start;
+    margin-top: 0;
+}
+
+p {
+    color: rgb(0, 0, 0);
+}
+
+.about,
+.features {
+    margin-bottom: 25px;
+}
+
+.card {
+    background-color: #fff8f3;
+    border: 1px solid #e0c4b4;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.feature-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.feature-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #e0c4b4;
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+
+.add-template input,
+.add-template textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e0c4b4;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+#save-template {
+    background-color: #d98a6c;
+    color: #fff8f3;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#save-template:hover {
+    background-color: #c06f50;
+}
+
+.templates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
