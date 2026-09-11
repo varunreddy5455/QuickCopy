@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
     <title>QuickCopy</title>
-    <link href="CSS/style.css" rel="stylesheet">
+    <link href="CSS/style.css" rel="stylesheet" />
   </head>
   <body>
+    <div class="page-glow" aria-hidden="true"></div>
     <div class="container">
 
       <header>
-        <img src="templates-app-logo.png" alt="Templates App Logo" class="logo" />
+        <img src="templates-app-logo.png" alt="QuickCopy logo" class="logo" />
+        <p class="eyebrow">Templates</p>
         <h1>QuickCopy</h1>
+        <p class="hero-subtitle">One place for all your templates.</p>
       </header>
 
       <section class="about">
-        <h2>One place for all your templates</h2>
         <p>This application allows you to create and manage templates for various purposes. You can customize templates, save them, and use them across various platforms without having to create multiple templates on different platforms.</p>
       </section>
 
@@ -31,7 +36,7 @@
         <h2>Add Template</h2>
         <p>To add a new template, please fill out the form below:</p>
         <div class="form-row">
-          <input id="template-name" type="text" placeholder="Template Name"/>
+          <input id="template-name" type="text" placeholder="Template Name" />
         </div>
         <div class="form-row">
           <textarea id="template-body" placeholder="Template Body" rows="5" cols="50"></textarea>
